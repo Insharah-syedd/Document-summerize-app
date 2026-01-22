@@ -1,0 +1,50 @@
+/* style.css */
+
+.stApp {
+    background: linear-gradient(135deg, #77176f 0%, #abb7ca 100%);
+}
+
+/* Glassmorphism Card with 3D Effect */
+.stSelectbox, .stFileUploader, .stTextArea {
+    background: rgba(150, 132, 132, 0.45) !important;
+    
+    /* Safari support fix */
+    -webkit-backdrop-filter: blur(15px); 
+    backdrop-filter: blur(15px);
+    
+    border-radius: 20px !important;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    
+    /* Stronger 3D Shadow */
+    box-shadow: 20px 20px 60px #bebebe, 
+               -20px -20px 60px #ffffff;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+/* 3D Neumorphic Button */
+.stButton>button {
+    background: #e0e0e0;
+    color: #1e3a8a !important;
+    border: none;
+    border-radius: 12px;
+    padding: 15px;
+    font-weight: bold;
+    
+    /* Neumorphic 3D shadow */
+    box-shadow: 6px 6px 12px #b8b9be, 
+               -6px -6px 12px #ffffff;
+    transition: all 0.2s ease;
+}
+
+/* Button Press Animation */
+.stButton>button:active {
+    box-shadow: inset 4px 4px 8px #b8b9be, 
+                inset -4px -4px 8px #ffffff;
+    transform: scale(0.98);
+}
+
+.stButton>button:hover {
+    color: #720a12 !important;
+    transform: translateY(-2px);
+}
